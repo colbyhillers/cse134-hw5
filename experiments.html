@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Experiments</title>
+    </head>
+    <body>
+        <header>
+            <h1>Experimental HTML</h1>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2>Favorite Vine</h2>
+                <video width="320" height="240" controls>
+                    <source src="umbrellas.mp4" type="video/mp4"> 
+                    Not supported by browser
+                </video>
+                <h2>Favorite Gym Song</h2>
+                <audio controls>
+                    <source src="spit.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <hr>
+            <section>
+                <h2>Canvas Demo</h2>
+                <canvas id="canvas" width="150" height="150">
+                    Browser not supported
+                </canvas>
+                <script>
+                    var c = document.getElementById("canvas");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+                    ctx.stroke();
+                </script>
+                <h2>SVG Demo</h2>
+                <svg width="100" height="100">
+                    <circle cx="100" cy="0" r="90" stroke="blue" stroke-width="8" fill="cyan" />
+                </svg>
+            </section>
+            <section>
+                <h2>Control Tests</h2>
+
+                <h3>The datalist element</h3>
+
+                <form>
+                    <label>Choose Favorite Crypto:</label>
+                    <input list="crypto">
+                    <datalist id="crypto">
+                        <option value="BTC">
+                        <option value="ETH">
+                        <option value="CAR">
+                        <option value="DOGE">
+                        <option value="SHIBA">
+                    </datalist>
+                    <input type="submit">
+                </form>
+
+                <br><br>
+
+                <button type="button">Clicky Click</button>
+                <br><br>
+                <textarea>
+                    This
+                        is 
+                            a
+                                test.
+                </textarea>
+                <template>
+                    <h3>I sure hope that nobody see's this</h3>
+                </template>
+                <br><br>
+                <table>
+                    <caption>Pet Preferences</caption>
+                    <colgroup>
+                        <col span="4">
+                    </colgroup>
+                    <tr>
+                        <th></th>
+                        <th>Cats</th>
+                        <th>Dogs</th>
+                        <th>Reptiles</th>
+                    </tr>
+                    <tr>
+                        <th>Likes</th>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>N</td>
+                    </tr>
+
+
+                </table>
+            </section>
+            
+            <h3>Preview of Main Page</h3>
+            <iframe src="index.html" height="400" width="300"></iframe>
+    
+        </main>
+        <hr>
+        <footer>
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label>Name</label>
+                    <input type="text"><br><br>
+                    <label>Contact Medium</label>
+                    <select>
+                        <optgroup label="Text">
+                            <option>Email</option>
+                            <option>Text</option>
+                            <option>Fax</option>
+                        </optgroup>
+                        <optgroup label="Voice">
+                            <option>Voicemail</option>
+                            <option>Pager</option>
+                        </optgroup>
+                    </select><br>
+                    <input type="text"><br><br>
+                    <label>Message</label>
+                    <input type="text"><br><br>
+                    <input type="submit"><br>
+                </fieldset>
+            </form>
+        </footer>
+    </body>
+</html>
+
