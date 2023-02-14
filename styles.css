@@ -1,0 +1,57 @@
+:root {
+    --bg-color: black;
+    --header-color1: #222;
+    --header-color2: #FFF;
+    --header-shadow: #03E9F4;
+}
+
+@font-face {
+    font-family: "LeagueSpartan";
+    src: url("media/LeagueSpartan-Bold.otf") format("opentype");
+}
+
+* {
+    font-family: "LeagueSpartan", sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF;
+    padding: .5rem;
+}
+
+nav > a {
+    font-size: 1.5rem;
+    color: purple;
+    background-color: aquamarine;
+    min-width: 10ch;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--header-color1);
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+h1:hover {
+    color: var(--header-color2);
+    text-shadow: 0 0 5x var(--header-shadow),
+        0 0 25px var(--header-shadow),
+        0 0 50px var(--header-shadow),
+        0 0 100px var(--header-shadow);
+}
