@@ -189,7 +189,35 @@ h1 {
     color: var(--header-color2);
     letter-spacing: 5px;
     text-align: center;
+    transition: 0.5s;
 }
+
+h1:hover {
+    cursor: pointer;
+    animation-name: colors;
+    animation-duration: 4s;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+
+}
+
+@keyframes colors {
+    14%   {color: red;}
+    28%   {color: orange;}
+    42%  {color: yellow;}
+    56%  {color: green;}
+    70% {color: blue;}
+    84%   {color: indigo;}
+    100%   {color: violet;}
+}
+
+h1:active {
+    transform: rotate(360deg);
+}
+
+
 
 .header > p {
     margin-bottom: 2ch;
