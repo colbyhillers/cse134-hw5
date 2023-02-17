@@ -12,90 +12,92 @@
             <a href="index.html#skills">Skills</a>
             <a href="index.html#experience">Experience</a>
             <a href="index.html#projects">Projects</a>
-            <a href="experiments.html">Experiments</a>
+            <a href="#">Contact</a>
         </nav>
         <div class="header">
+            <picture>
+                <img id="profile-pic" src="media/selfie.jpg" alt="Selfie of Colby" width="140" height="200">
+            </picture>
             <h1>Colby Hillers</h1>
+            <p>Software Engineer Intern @ Leidos <br> Computer Engineering Student @ UCSD</p>
         </div>
-        <picture>
-            <img src="media/selfie.jpg" alt="Selfie of Colby" width="140" height="200">
-        </picture>
-        <p>Reprehenderit id <b>Hi</b> cupidatat ut <i>oof</i> laborum fugiat <strong>ouch</strong> 
-            <br> cupidatat ullamco <em>my bones</em> est ea minim est cupidatat.</p>
     </header>
     <hr>
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-            <a href="#">temp</a>
             <p>
-                Ex non aliqua est enim est proident dolore duis mollit.<br> 
-                Cillum proident cillum deserunt elit ad minim aliqua fugiat <br>
-                enim enim proident. Minim ea mollit dolor anim aliquip ex <br>
-                qui reprehenderit aliquip duis. Commodo aliquip esse ex aute <br>
-                aliqua nulla laboris tempor veniam nisi ut ea ut mollit. Do <br>
-                aliqua et eu cillum ut ipsum consequat culpa excepteur aliqua.
+                I am currently a senior finishing up my Computer Engineering degree at the 
+                University of California, San Diego. I've also been interning as a Software Engineer
+                at Leidos under their RnD department since June 2022. I mainly work with embedded
+                systems in FreeRTOS, but I also do Python scripting and a lot of C/C++. Some of my
+                hobbies are gaming, going to the gym, and staying up to the date with the latest movies.
+
             </p>
         </section>
+        <hr>
         <section id="skills">
             <h2>Skills</h2>
-            <h3>Top Languages</h3>
-            <ol>
-                <li>C/C++</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ol>
-            <aside>
-                <h3>Other Relevant Knowledge</h3>
-                <ul>
-                    <li>SystemVerilog</li>
-                    <li>FreeRTOS</li>
-                    <li>JavaScript</li>
-                    <li>MySQL/NoSQL</li>
-                    <li>HTML/CSS</li>
-                    <li>REST APIs</li>
-                    <li>TensorFlow</li>
-                    <li>React</li>
-                    <li>Firebase</li>
-                    <li>Flutter</li>
-                </ul>
-            </aside>
+            <div class="skills-container">
+                <div class="container">
+                    <ul>
+                        <li>SystemVerilog</li>
+                        <li>FreeRTOS</li>
+                        <li>JavaScript</li>
+                        <li>MySQL/NoSQL</li>
+                        <li>HTML/CSS</li>
+                        <li>REST APIs</li>
+                        <li>TensorFlow</li>
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>Flutter</li>
+                    </ul>    
+                </div>
+                
+            </div>
         </section>
+        <hr>
         <section id="experience">
             <h2>Experience</h2>
+            <div id="leidos">
+                <p id="company">Leidos</p>
+                <p id="position">Software Engineer Intern, <time datetime="2022-6">June 2022</time> - <time datetime="present">Present</time></p>
+                </p>
+                <hr>
+                <p id="description">
+                    Over the last few months at Leidos I have learned to work in the FreeRTOS environment,
+                    which is an operating system that allows for multiple processes to run concurrently.
+                    This is especially important in embedded systems when there are multiple sensor inputs
+                    being received simultaneously. I've worked on implementing RF communication and GPS
+                    functionality to multiple microcontrollers. Additionally, I've had to pickup some 
+                    understanding of Assembly to help me understand the memory constraints that embedded
+                    programs tend to have. 
+                </p>
+            </div>
         </section>
+        <hr>
         <section id="projects">
             <h2>Projects</h2>
-            <details>
-                <summary>Project 1</summary>
-                    <figure>
-                        <img src="media/cat.jpg" alt="Cat" width="100" height="110">
-                        <figcaption>Figure 1.1 - Cat in Victorville, California</figcaption>
-                    </figure>
+            <div class="proj-container">
+                <details>
+                    <summary>Project 1</summary>
+                        <p>
+                            WIP
+                        </p>
+                </details>
+                <details>
+                    <summary>Project 2</summary>
                     <p>
                         WIP
                     </p>
-            </details>
-            <details>
-                <summary>Project 2</summary>
-                <pre><code>
-                    class HelloWorld
-                    {
-                        // Your program begins with a call to main().
-                        // Prints "Hello, World" to the terminal window.
-                        public static void main(String args[])
-                        {
-                            System.out.println("Hello, World");
-                        }
-                    }
-                </code></pre>
-            </details>
-            <details>
-                <summary>Project 3</summary>
-                <p>
-                    WIP
-                </p>
-            </details>
+                </details>
+                <details>
+                    <summary>Project 3</summary>
+                    <p>
+                        WIP
+                    </p>
+                </details>
+            </div>
         </section>       
     </main>
     <hr>
