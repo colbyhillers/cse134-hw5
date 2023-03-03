@@ -4,6 +4,6 @@ PID: A15949627
 
 Netlify: https://prismatic-starship-cf4ee4.netlify.app/
 
-Notes: I wasn't able to succeed in implementing an edit button for part 3, however I
+Notes: I was only able to get edit working partially(kinda buggy), however I
 was able to add some minimal styling so it doesn't burn the eyes of whoever has to 
 grade it XD.
