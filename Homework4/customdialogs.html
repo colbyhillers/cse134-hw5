@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.0/purify.js" integrity="sha512-Jv1LuJlYi60auZ8kNw/Yjzpk0MK2mwF2OhA51j+fZZMcNvctE/S8KODl0kpnwa4emUs9Etz0hxOkp0wNpbvpnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <dialog id="alertDialogue">
+        <p>Alert pressed!</p>
+        <button id="closeBtn">Ok</button>
+    </dialog>
+    <button id="alertBtn">Alert</button>
+
+    <dialog id="confirmDialogue">
+        <p>Do you confirm this?</p>
+        <button id="cancelBtn">Cancel</button>
+        <button id="okBtn">Ok</button>
+    </dialog>
+    <button id="confirmBtn">Confirm</button>
+
+    <dialog id="promptDialogue">
+        <label for="name">What is your name?</label>
+        <br>
+        <input type="text" id="name" name="name" autocomplete="off">
+        <br><br>
+        <button id="cancelPromptBtn">Cancel</button>
+        <button id="okPromptBtn">Ok</button>
+    </dialog>
+    <button id="promptBtn">Prompt</button>
+
+    <br><br>
+    <output id="result"></output>
+
+    <script type="module">
+        import {showAlert, showConfirm, showPrompt} from './customdialog.js';
+
+        let alertBtn = document.getElementById('alertBtn');
+        alertBtn.addEventListener('click', showAlert);
+
+        let confirmBtn = document.getElementById('confirmBtn');
+        confirmBtn.addEventListener('click', showConfirm);
+
+        let promptBtn = document.getElementById('promptBtn');
+        promptBtn.addEventListener('click', showPrompt);
+    </script>
+</body>
+</hmtl>

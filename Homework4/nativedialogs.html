@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.0/purify.js" integrity="sha512-Jv1LuJlYi60auZ8kNw/Yjzpk0MK2mwF2OhA51j+fZZMcNvctE/S8KODl0kpnwa4emUs9Etz0hxOkp0wNpbvpnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Simple Dialogs?</h1>
+    <button id="btn1">Alert</button>
+    <button id="btn2">Confirm</button>
+    <button id="btn3">Prompt</button>
+    <button id="btn4">Safer Prompt</button>
+    <br><br>
+    <output id="result"></output>
+    <script>
+        window.addEventListener('DOMContentLoaded', init);
+        let result = document.getElementById('result');
+
+        function init() {
+            let buttonOne = document.getElementById('btn1');
+            buttonOne.addEventListener('click', () => {alert('This is an alert')});
+
+            let buttonTwo = document.getElementById('btn2');
+            buttonTwo.addEventListener('click', functTwo);
+
+            let buttonThree = document.getElementById('btn3');
+            buttonThree.addEventListener('click', functThree);
+
+            let buttonFour = document.getElementById('btn4');
+            buttonFour.addEventListener('click', functFour);
+        }
+
+        function functTwo() {
+            if(window.confirm('Please confirm')) {
+                result.innerHTML = 'The value returned by the confirm method is : True';
+            } else {
+                result.innerHTML = 'The value returned by the confirm method is : False';
+            }
+        }
+
+        function functThree() {
+            let name = window.prompt('Enter your name');
+
+            if(name === null || name === "") {
+                result.innerHTML = 'User didn\'t enter anything';
+            } else {
+                result.innerHTML = 'Your name is ' + name;
+            }
+        }
+
+        function functFour() {
+            let name = window.prompt('Enter your name');
+            let clean = DOMPurify.sanitize(name);
+
+            if(name === null || name === "") {
+                result.innerText = 'User didn\'t enter anything';
+            } else {
+                result.innerText = 'Your name is ' + clean;
+            }
+        }
+    </script>
+</body>
+</hmtl>

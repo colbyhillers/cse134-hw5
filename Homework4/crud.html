@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="./blog.js"></script>
+    <link rel="stylesheet" href="stylecrud.css">
+</head>
+<body>
+    <header>
+        <h1>Journal Entries</h1>
+    </header>
+    <main>
+        <dialog id="journal-entry">
+            <form id="entry-form" method="dialog">
+                <label for="entry-name">Entry Name</label><br>
+                <input id="entry-name" name="entry-name" type="text"><br>
+                <label for="entry-date">Entry Date</label><br>
+                <input id="entry-date" name="entry-date" type="date"><br>
+                <label for="entry-summary">Entry Summary</label><br>
+                <textarea id="entry-summary" name="entry-summary" cols="25" rows="5"></textarea><br>
+                <button id="cancel-entry">Cancel</button>
+                <button id="submit-entry">Submit</button>
+            </form>
+        </dialog>
+
+        <button id="add-entry">Add Entry</button>
+        <br>
+        <output id="rendered-entries"></output>
+    </main>
+</body>
+</hmtl>
