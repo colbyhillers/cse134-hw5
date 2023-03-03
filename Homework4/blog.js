@@ -12,7 +12,7 @@ function init() {
     let addEntryBtn = document.getElementById("add-entry");
     let cancelEntryBtn = document.getElementById("cancel-entry");
     let submitEntryBtn = document.getElementById("submit-entry");
-    localData = JSON.parse(localStorage.getItem("localEntries") || []);
+    localData = JSON.parse(localStorage.getItem("localEntries")) || [];
 
     addEntryBtn.addEventListener("click", () => {
         document.getElementById("submit-entry").innerText = "Submit";
