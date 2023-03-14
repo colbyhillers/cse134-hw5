@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.0/purify.js" integrity="sha512-Jv1LuJlYi60auZ8kNw/Yjzpk0MK2mwF2OhA51j+fZZMcNvctE/S8KODl0kpnwa4emUs9Etz0hxOkp0wNpbvpnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="method.js"></script>
+</head>
+<body>
+    <h1>Method Test</h1>
+    <form id="form_data">
+        <label for="id">ID:</label><br>
+        <input type="number" id="id" name="id"><br>
+
+        <label for="article_name">Article Name:</label><br>
+        <input type="text" id="article_name" name="article_name"><br>
+
+        <label for="article_body">Article Body:</label><br>
+        <textarea id="article_body" name="article_body"></textarea><br>
+
+        <input type="hidden" id="date" name="date"><br>
+
+        <button type="button" id="postBtn">Post</button>
+        <button type="button" id="getBtn">Get</button>
+        <button type="button" id="putBtn">Put</button>
+        <button type="button" id="deleteBtn">Delete</button>
+        <button type="button" id="clearBtn">Clear</button>
+
+    </form>
+    <br><br>
+    <output id="result"></output>
+</body>
+</hmtl>
