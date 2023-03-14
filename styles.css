@@ -241,7 +241,7 @@ h1:active {
 }
 
 #about-images {
-
+    display: none;
 }
 
 .about-class {
